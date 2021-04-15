@@ -1,0 +1,442 @@
+
+@import url("https://use.typekit.net/arg6gew.css");
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+html{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: 1920px;
+  overflow: scroll;
+}
+
+.airtable_stuff{
+  position: absolute;
+  top: 1149px;
+}
+
+.bronx_word{
+  position: absolute;
+  width: 431px;
+  left: 602px;
+  top: 78px;
+
+  z-index: 1;
+}
+
+.graffiti_in{
+  text-transform: uppercase;
+
+  position: absolute;
+  left: 416px;
+  top: 95px;
+
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+
+  color: #FFFFFF;
+}
+
+.main_title{
+  position: absolute;
+  width: 187px;
+  height: 21px;
+  left: 25px;
+  top: 23px;
+
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+}
+
+/* icons */ 
+.map_con{
+  position: absolute;
+  width: 133px;
+  height: 90px;
+  left: 1260px;
+  top: 23px;
+}
+
+.map_con:hover{
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+  transition: 1s ease;
+}
+
+.signage{
+  position: absolute;
+  width: 668px;
+  height: 181px;
+  left: 386px;
+  top: 0px;
+}
+
+.platform{
+  position: absolute;
+  width: 1440px;
+  height: 879px;
+  left: 0px;
+  top: 246px;
+}
+
+/* borough title */
+.instruction{
+  font-family: 'Sedgwick Ave Display', cursive;
+  position: absolute;
+  width:500px;
+  left: 503px;
+  top: 948px;
+  line-height: auto;
+
+  font-size: 24px;
+  /* or 125% */
+
+  color: #9D00FF;
+
+  z-index: 1;
+}
+
+
+/* airtable styling */
+.hidden {
+  display: none !important;
+}
+
+.street {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2em;
+  width: 100%;
+  padding: 10px;
+}
+
+.street .sky-scraper {
+  background: #9D00FF;
+  color: black;
+
+  height: 80px;
+  width: 25px;
+  padding: 10px;
+  margin-right: 20px;
+
+  writing-mode: vertical-lr;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 18px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.street .sky-scraper.active {
+  background: black; 
+  color: black;
+}
+
+.street .sky-scraper:hover {
+  background: #00C868;
+  color: white;
+}
+
+.photo-detail {
+  display: flex;
+}
+
+.photo-detail .figure {
+  width: 150px;
+  flex: none;
+  margin-right: 30px;
+}
+
+.photo-detail .cover-image {
+  width: 300%;
+  border: 5px solid white;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.photo-detail .info {
+  max-width: 700px;
+  margin-top: 20px;
+  margin-left: 350px;
+  font-size: 18px;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.photo-detail .title {
+  max-width: 600px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 36px;
+  color: white;
+
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+.photo-detail .description {
+  max-width: 600px;
+  margin-top: 0.5em;
+  color: white;
+  font-family: marydale, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: auto;
+}
+
+.more{
+  color: white;
+}
+
+
+/* hover effects */
+.more:hover{
+  color: blue;
+  background-color: #24c971;
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* title hover effect */
+.r-link{
+  display: var(--rLinkDisplay, inline-flex) !important;
+}
+
+.r-link[href]{
+  color: var(--rLinkColor) !important;
+  text-decoration: var(--rLinkTextDecoration, none) !important;
+}
+
+.text-underlined{
+
+    --uiTextUnderlinedLineHeight: var(--textUnderlinedLineHeight, 2px); /* 1 */
+    --uiTextUnderlinedLineGap: var(--textUnderlinedLineGap, .5rem);
+    --uiTextUnderlinedPaddingBottom: calc(var(--uiTextUnderlinedLineHeight) + var(--uiTextUnderlinedLineGap));
+
+    padding-bottom: var(--uiTextUnderlinedPaddingBottom) !important;
+    position: var(--textUnderlinedPosition, relative) !important;
+    z-index: var(--textUnderlinedZindex, 1) !important;
+}
+
+.text-underlined::after{
+    content: "";
+    width: var(--textUnderlinedLineWidht, 100%) !important;
+    height: var(--uiTextUnderlinedLineHeight) !important;
+    background-image: var(--textUnderlinedBackgroundImage, linear-gradient(to top, var(--textUnderlinedLineColor, currentColor) 30%, rgba(0, 0, 0, 0) 45%)) !important;
+
+    position: absolute;
+    left: var(--textUnderlinedLineLeft, 0) !important;
+    bottom: var(--textUnderlinedLineBottom, 0) !important;
+    z-index: var(--textUnderlinedLineZindex, -1) !important;
+}
+
+.links{
+  --textUnderlinedLineHeight: 100%;
+  --textUnderlinedLineGap: 0;
+  --textUnderlinedLineColor: #00C868;
+  
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.links::after{
+  will-change: width;
+  transition: width .1s ease-out;
+  transform: rotate(-2deg);
+  transform-origin: left bottom;
+}
+
+.links:hover{
+  --textUnderlinedLineWidht: 0;
+}
+
+.links:hover::after{
+  transition-duration: .15s;
+}
+
+.links{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.links:focus{
+  outline: 2px solid #00C868;
+  outline-offset: .5rem;
+}
+
+/* subway train */
+.train {
+   left: 0;
+   position: absolute;
+   display: block;
+   top: 450px;
+   x-transition: all 1s ease-in-out;
+   animation: train 5s infinite;
+   -webkit-animation: train 5s infinite;
+}
+
+.path {
+  position: relative;
+  overflow: hidden;
+  width: 1440px;
+  top: 30px;
+  height: 900px;
+  margin: auto;
+}
+
+
+@keyframes train {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 900px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* button */
+
+.up:hover,
+.round:hover
+{
+  background-color: #9D00FF;
+  color: white;
+}
+
+.button{
+  position: absolute;
+  top: 10.15%;
+  margin-left: 26.5%;
+  text-decoration: none;
+}
+
+.next, .up {
+  background-color: #00C868;
+  color: black;
+
+}
+
+.round {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+/* media queries */
+@media screen and (max-width:800px) {
+  .signage{
+    width: 90%;
+    left: 18px;
+    top: 20px;
+  }
+
+  .graffiti_in{
+    font-size: 30px;
+    left: 50px;
+    top: 115px;
+  }
+
+  .bronx_word{
+    width: 50%;
+    left: 185px;
+    top: 111px;
+  }
+
+  .map_con{
+    width: 20%;
+    height: 20%;
+    left: 375px;
+    top: 32px;
+  }
+
+  .platform{
+    width: 100%;
+    top: 0;
+  }
+
+  .path, .train{
+    width: 100%;
+    top: 214px;
+  }
+
+  .instruction{
+    left: 65px;
+    width: 70%;
+    top: 630px;
+    line-height: auto;
+  }
+
+  /* airtable elements*/
+
+  /* all blocks */
+  .street{
+    flex-direction: column;
+    text-orientation: upright;
+    margin-top: -340px;
+    width: 100%;
+  }
+
+  .street .sky-scraper{
+    writing-mode: horizontal-tb;
+    width: 100%;
+    height: 20px;
+    margin: 10px;
+  }
+
+  /* photo image */
+
+  .photo-detail .cover-image{
+    width: 400px;
+    margin-left: 20px;
+  }
+
+  .photo-detail .info{
+    width: 400px;
+    left: 0px;
+    margin-left: 20px;
+  }
+
+  .photo-detail {
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  .main_title{
+    left: 170px;
+  }
+
+/*
+  .photo-detail .figure {
+    width: 20%;
+    max-width: 300px;
+    left: 0px;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+*/
+}
+
+
+

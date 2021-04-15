@@ -1,0 +1,19 @@
+<svg width="1440" height="879" viewBox="0 0 1440 879" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="672" width="1440" height="193" fill="black"/>
+<line y1="667" x2="1440" y2="667" stroke="white" stroke-width="10"/>
+<rect y="850" width="1440" height="29" fill="white"/>
+<rect x="1440" width="80" height="1440" transform="rotate(90 1440 0)" fill="white"/>
+<rect x="1185" y="17" width="80" height="752" fill="white"/>
+<rect x="190" y="17" width="80" height="752" fill="white"/>
+<rect y="104" width="1440" height="29" fill="white"/>
+<rect x="552" y="80" width="11" height="27" fill="white"/>
+<rect x="874" y="80" width="11" height="27" fill="white"/>
+<line y1="69" x2="1440" y2="69" stroke="black" stroke-width="4"/>
+<line y1="11" x2="1440" y2="11" stroke="black" stroke-width="4"/>
+<circle cx="41" cy="40" r="8" fill="black"/>
+<circle cx="551" cy="40" r="8" fill="black"/>
+<circle cx="724" cy="40" r="8" fill="black"/>
+<circle cx="897" cy="40" r="8" fill="black"/>
+<circle cx="1062" cy="40" r="8" fill="black"/>
+<circle cx="386" cy="40" r="8" fill="black"/>
+</svg>
