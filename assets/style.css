@@ -287,32 +287,28 @@ a{
    position: absolute;
    display: block;
    top: 450px;
-   x-transition: all 1s ease-in-out;
-   animation: train 5s infinite;
-   -webkit-animation: train 5s infinite;
+   animation: train 1.5s infinite alternate;
+   -webkit-animation: train 1.5s linear infinite alternate;
+}
+
+@keyframes train {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 110%;
+  }
 }
 
 .path {
   position: relative;
   overflow: hidden;
   width: 1440px;
-  top: 30px;
+  top: 59px;
   height: 900px;
   margin: auto;
 }
 
-
-@keyframes train {
-  0% {
-    left: 0;
-  }
-  50% {
-    left: 900px;
-  }
-  100% {
-    left: 0;
-  }
-}
 
 /* button */
 
